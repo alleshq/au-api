@@ -3,7 +3,9 @@ const db = require("../../util/db");
 module.exports = async (req, res) => {
     //Get Transaction
     const transaction = await db.AuTransaction.findOne({
-        id: req.params.id
+        where: {
+            id: req.params.id
+        }
     });
     if (!transaction) return res.status(400).json({err: "invalidTransaction"});
 
