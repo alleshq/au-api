@@ -1,3 +1,9 @@
 {
-	"secretLength": 128
+	"secretLength": 128,
+	"minAmount": 10,
+	"maxAmount": 1000000,
+	"minMeta": 5,
+	"maxMeta": 100,
+	"fee": 1,
+	"vault": "1ba148ae-2d45-4f0b-92ef-1d254635e330"
 }
