@@ -30,8 +30,7 @@ module.exports = async (req, res, next) => {
 			id: accountCredentials.id
 		}
 	});
-	if (!account)
-		return res.status(401).json({err: "badAuthorization"});
+	if (!account) return res.status(401).json({err: "badAuthorization"});
 	if (account.secret !== accountCredentials.secret)
 		return res.status(401).json({err: "badAuthorization"});
 	req.account = account;
