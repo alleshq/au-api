@@ -1,5 +1,5 @@
 # Au API
-This is the API for Au Accounts. It uses Basic HTTP Auth, with the account id and secret.
+This is the API for Au Accounts. It uses Basic HTTP Auth, with the account id and secret. The api is at `https://au.alles.cx/api/v1`.
 
 ### Endpoints:
 - Account Info: `GET /account`
